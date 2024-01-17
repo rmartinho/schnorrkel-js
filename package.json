@@ -1,0 +1,46 @@
+{
+  "name": "@rmf1723/schnorrkel",
+  "version": "0.1.0",
+  "description": "Schnorr signatures in the ristretto255 curve",
+  "type": "module",
+  "main": "dist/schnorrkel.js",
+  "types": "dist/schnorrkel.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "build": "npm run build:clean; tsc",
+    "build:clean": "rm dist/* 2> /dev/null",
+    "lint": "prettier --check 'src/**/*.{js,ts}' 'test/**/*.{js,ts}'",
+    "format": "prettier --write 'src/**/*.{js,ts}' 'test/**/*.{js,ts}'",
+    "test": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rmartinho/schnorrkel-js.git"
+  },
+  "keywords": [
+    "cryptography",
+    "security",
+    "signatures",
+    "schnorrkel",
+    "elliptic curves",
+    "ristretto255"
+  ],
+  "author": "rmf",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/rmartinho/schnorrkel-js/issues"
+  },
+  "homepage": "https://github.com/rmartinho/schnorrkel-js#readme",
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.0"
+  },
+  "dependencies": {
+    "@rmf1723/merlin": "^0.1.3",
+    "@rmf1723/ristretto255": "^0.1.8",
+    "@rmf1723/tweetnacl": "^1.0.4"
+  }
+}

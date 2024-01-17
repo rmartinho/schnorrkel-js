@@ -1,0 +1,1 @@
+declare module '@rmf1723/tweetnacl'
